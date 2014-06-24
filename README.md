@@ -14,5 +14,9 @@ while(reader.hasNextLine()){
 
 ### CHANGELOG:
 
-v0.0.1
+
+####v0.0.2
+* module.exports vs. exports (tests passing)
+
+####v0.0.1
 * changed name from "LineBufferReader" to "FileLineReader" to match github

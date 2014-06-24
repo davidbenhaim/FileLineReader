@@ -9,7 +9,7 @@
 var fs = require("fs");
 var sys = require("sys");
 
-exports = function(filename, bufferSize) {
+module.exports = function(filename, bufferSize) {
 
     if(!bufferSize || bufferSize <= 0) {
         bufferSize = 8192;
