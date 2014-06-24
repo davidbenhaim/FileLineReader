@@ -14,7 +14,6 @@ while(reader.hasNextLine()){
 
 ### CHANGELOG:
 
-
 ####v0.0.2
 * module.exports vs. exports (tests passing)
 
