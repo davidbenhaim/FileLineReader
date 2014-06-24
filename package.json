@@ -1,0 +1,11 @@
+{
+  "name": "LineBufferReader",
+  "version": "0.0.0",
+  "description": "Reads a file line by line. Based on http://blog.jaeckel.com/2010/03/i-tried-to-find-example-on-using-node.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Dirk Jäckel",
+  "license": "MIT"
+}
