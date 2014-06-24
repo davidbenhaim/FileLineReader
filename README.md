@@ -1,4 +1,4 @@
-###LineBufferReader
+###FileLineReader
 
 Please see [http://blog.jaeckel.com/2010/03/i-tried-to-find-example-on-using-node.html](http://blog.jaeckel.com/2010/03/i-tried-to-find-example-on-using-node.html)
 
