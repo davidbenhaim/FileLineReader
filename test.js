@@ -1,10 +1,10 @@
 var assert = require("assert"),
         sys = require("sys"),
-        lbr = require("./index");
+        FileLineReader = require("./index");
 
 try {
 	sys.debug(__filename + " Testing test.txt");
-    var reader = new lbr.FileLineReader("./test_data/test.txt", 10);
+    var reader = new FileLineReader("./test_data/test.txt", 10);
 
     sys.debug(__filename + " First line...");
     assert.equal(reader.hasNextLine(), true);
@@ -36,7 +36,7 @@ try {
 
 try {
 	sys.debug(__filename + " Testing empty.txt");
-    var reader = new lbr.FileLineReader("./test_data/empty.txt", 10);
+    var reader = new FileLineReader("./test_data/empty.txt", 10);
 
     sys.debug(__filename + " First line... (none)\n");
     assert.equal(reader.hasNextLine(), false);
@@ -49,7 +49,7 @@ try {
 
 try {
 	sys.debug(__filename + " Testing test_no_lastline.txt"); 
-    var reader = new lbr.FileLineReader("./test_data/test_no_lastline.txt", 10);
+    var reader = new FileLineReader("./test_data/test_no_lastline.txt", 10);
 
     sys.debug(__filename + " First line... yahoo.com");
     assert.equal(reader.hasNextLine(), true);
@@ -79,7 +79,7 @@ try {
 
 try {
 	sys.debug(__filename + " Testing empty.txt (no buffer size)");
-    var reader = new lbr.FileLineReader("./test_data/empty.txt");
+    var reader = new FileLineReader("./test_data/empty.txt");
 
     sys.debug(__filename + " First line... (none)\n");
     assert.equal(reader.hasNextLine(), false);
@@ -92,7 +92,7 @@ try {
 
 try {
 	sys.debug(__filename + " Testing test_no_lastline.txt (no buffer size)"); 
-    var reader = new lbr.FileLineReader("./test_data/test_no_lastline.txt");
+    var reader = new FileLineReader("./test_data/test_no_lastline.txt");
 
     sys.debug(__filename + " First line... yahoo.com");
     assert.equal(reader.hasNextLine(), true);
