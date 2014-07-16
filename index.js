@@ -58,7 +58,7 @@ module.exports = function(filename, bufferSize) {
     //public:
     this.bufferSize = function(){
         return buffer.length
-    }
+    };
 
     //public:
     this.nextLine = function() {
@@ -71,6 +71,11 @@ module.exports = function(filename, bufferSize) {
 
         buffer = buffer.substring(result.length + 1, buffer.length);
         return result;
+    };
+
+    //public
+    this.close = function() {
+        fs.closeSync(fd);
     };
 
     return this;

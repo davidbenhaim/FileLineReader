@@ -15,6 +15,9 @@ while(reader.hasNextLine()){
 ### CHANGELOG:
 
 ####v0.0.2
+* added FileLineReader.close() to close file descriptors
+
+####v0.0.2
 * module.exports vs. exports (tests passing)
 
 ####v0.0.1
